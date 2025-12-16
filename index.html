@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Buddy - Your Ultimate Travel Planner</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="website-logo">
+      <span>Travel Buddy</span>
+    </div>
+    <div class="navbar-links">
+      <a id="nav-home">Home</a> <a id="nav-about">About Us</a> <a id="nav-contact">Contact Us</a> </div>
+    <div class="search-container" id="search-bar-container">
+      <input type="text" id="search-input" placeholder="Search a destination or keyword...">
+      <button id="search-button">Search</button>
+      <button id="reset-button">Reset</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    
+    <section id="home-view">
+        <div id="home-hero-content">
+            <h1>EXPLORE<br>DREAM<br>DESTINATION</h1> <div id="introduction-box">
+                It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, 
+                while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+            </div>
+            
+            <div class="social-links"> <a href="#"><i class="fab fa-facebook-f" title="Facebook"></i></a> 
+                <a href="#"><i class="fab fa-twitter" title="Twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube" title="Youtube"></i></a>
+            </div>
+        </div>
+        
+        <h2 id="recommendation-heading" class="hidden">Recommendation Results</h2>
+        
+        <div id="recommendation-results">
+          </div>
+    </section>
+
+    <section id="about-us-page" class="hidden content-section">
+      <div class="about-header">
+        <h2>ABOUT US</h2>
+      </div>
+      
+      <p>
+        Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to **provide the best experience** for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in **putting our customers first** and **working together** to achieve our goals.
+      </p>
+
+      <h3>Our Team</h3>
+      <div class="team-members">
+        <div class="team-card">
+          <img src="images/Muskan-pic.webp" alt="Team Member 1">
+          <h4>Muskan Akram</h4>
+          <p>CEO</p>
+        </div>
+        <div class="team-card">
+          <img src="images/boy.webp" alt="Team Member 2">
+          <h4>Thomas Samp</h4>
+          <p>Team Lead</p>
+        </div>
+        <div class="team-card">
+          <img src="images/boy.webp" alt="Team Member 3">
+          <h4>Mike Tyson</h4>
+          <p>Delivery Head</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us-page" class="hidden content-section">
+      <div class="contact-header">
+        <h2>CONTACT US</h2>
+      </div>
+      <p style="text-align: center;">Get in touch. Fill out the form below and we will get back to you as soon as possible.</p>
+      
+      <form class="contact-form" onsubmit="alert('Form submitted! (This is a placeholder action)'); return false;">
+        
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group form-group-message">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        
+        <div class="submit-container">
+          <button type="submit">Submit Message</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>
