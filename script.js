@@ -1,6 +1,7 @@
 
-// Task 6: Mock JSON Data structure (updated to match your file's structure)
-// Note: This is now only used as a fallback/reference. The code below will use fetch().
+window.addEventListener("load", () => {
+  document.body.classList.add("bg-loaded");
+});
 const mockApiData = {
     "countries": [
         {
@@ -236,3 +237,4 @@ document.addEventListener('DOMContentLoaded', () => {
     navigateTo('home');
     resetRecommendations();
 });
+
