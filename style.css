@@ -8,7 +8,6 @@ body {
   color: #fff;
   background-image: url("images/holiday.webp"); /* Background image */
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   line-height: 1.6;
 }
@@ -330,3 +329,4 @@ body {
   cursor: pointer;
   font-size: 1.1em;
 }
+
